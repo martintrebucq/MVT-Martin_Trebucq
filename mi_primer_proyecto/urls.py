@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mi_primera_app.views import familia
+from mi_primera_app.views import datos_familiares
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('familia/',familia),
+    path('datos-familiares',datos_familiares)
+    
 ]
