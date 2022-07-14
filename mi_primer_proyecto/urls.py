@@ -17,10 +17,15 @@ from django.contrib import admin
 from django.urls import path
 from mi_primera_app.views import familia
 from mi_primera_app.views import datos_familiares
-
+from mi_primera_app.views import modelo_autos
+from mi_segunda_app.views import mostrar_autos, mostrar_base
+from mi_segunda_app.views import mostrar_autos
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('familia/',familia),
-    path('datos-familiares',datos_familiares)
+    path('datos-familiares',datos_familiares),
+    path('autos',modelo_autos),
+    path('mostrar-autos',mostrar_autos),
+    path('mostrar-base',mostrar_base),
     
 ]
